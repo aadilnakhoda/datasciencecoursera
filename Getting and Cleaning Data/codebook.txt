@@ -1,0 +1,117 @@
+#Codebook
+
+1. Dataset Information:
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+
+For each record it is provided:
+======================================
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+2. Variables and their summaries:
+
+Features	          Mean	       c Std.Dev	     Number Valid
+activity	    3.64336235	    1.744742536	                  14704
+angle.tBodyAccJerkMean..gravityMean.	0.002186097	0.448291046	14704
+angle.tBodyAccMean.gravity.	0.00868366	0.336775122	14704
+angle.tBodyGyroJerkMean.gravityMean.	-0.00598094	0.477958833	14704
+angle.tBodyGyroMean.gravityMean.	0.008725861	0.608282255	14704
+angle.X.gravityMean.	-0.489547202	0.511789415	14704
+angle.Y.gravityMean.	0.058593033	0.297469918	14704
+angle.Z.gravityMean.	-0.056514703	0.279112733	14704
+fBodyAcc.mean...X	-0.622591094	0.428196721	14704
+fBodyAcc.mean...Y	-0.539011987	0.48370428	14704
+fBodyAcc.mean...Z	-0.660437498	0.370072874	14704
+fBodyAcc.meanFreq...X	-0.22732494	0.264718501	14704
+fBodyAcc.meanFreq...Y	0.013601585	0.23975771	14704
+fBodyAcc.meanFreq...Z	0.045315928	0.289160236	14704
+fBodyAcc.std...X	-0.600200679	0.457773841	14704
+fBodyAcc.std...Y	-0.528657417	0.482259119	14704
+fBodyAcc.std...Z	-0.608564634	0.414985648	14704
+fBodyAccJerk.mean...X	-0.659582568	0.393704538	14704
+fBodyAccJerk.mean...Y	-0.631882611	0.407677108	14704
+fBodyAccJerk.mean...Z	-0.7411121	0.307932306	14704
+fBodyAccJerk.meanFreq...X	-0.046491343	0.294380235	14704
+fBodyAccJerk.meanFreq...Y	-0.211627431	0.276366602	14704
+fBodyAccJerk.meanFreq...Z	-0.12257927	0.275422293	14704
+fBodyAccJerk.std...X	-0.659315818	0.395431637	14704
+fBodyAccJerk.std...Y	-0.614491681	0.434688099	14704
+fBodyAccJerk.std...Z	-0.778752052	0.268287629	14704
+fBodyAccMag.mean..	-0.585534812	0.452669138	14704
+fBodyAccMag.meanFreq..	0.073136799	0.267238546	14704
+fBodyAccMag.std..	-0.65649531	0.362619495	14704
+fBodyBodyAccJerkMag.mean..	-0.624263775	0.428827259	14704
+fBodyBodyAccJerkMag.meanFreq..	0.178195403	0.253746499	14704
+fBodyBodyAccJerkMag.std..	-0.646927351	0.404704066	14704
+fBodyBodyGyroJerkMag.mean..	-0.779376076	0.275723624	14704
+fBodyBodyGyroJerkMag.meanFreq..	0.12529344	0.25098519	14704
+fBodyBodyGyroJerkMag.std..	-0.792391461	0.265424876	14704
+fBodyBodyGyroMag.mean..	-0.693209575	0.335014331	14704
+fBodyBodyGyroMag.meanFreq..	-0.046516139	0.282654919	14704
+fBodyBodyGyroMag.std..	-0.692875837	0.322839408	14704
+fBodyGyro.mean...X	-0.673022842	0.357377146	14704
+fBodyGyro.mean...Y	-0.7019274	0.347308434	14704
+fBodyGyro.mean...Z	-0.645920841	0.385641722	14704
+fBodyGyro.meanFreq...X	-0.10121175	0.25924285	14704
+fBodyGyro.meanFreq...Y	-0.177143302	0.275960442	14704
+fBodyGyro.meanFreq...Z	-0.048458172	0.265981344	14704
+fBodyGyro.std...X	-0.737985987	0.291377429	14704
+fBodyGyro.std...Y	-0.666283543	0.385680302	14704
+fBodyGyro.std...Z	-0.69088761	0.341837923	14704
+subject	17.41308487	8.974837385	14704
+tBodyAcc.mean...X	0.274488125	0.070258943	14704
+tBodyAcc.mean...Y	-0.017695427	0.040809137	14704
+tBodyAcc.mean...Z	-0.10914102	0.056633262	14704
+tBodyAcc.std...X	-0.605438451	0.448719124	14704
+tBodyAcc.std...Y	-0.510937561	0.502627561	14704
+tBodyAcc.std...Z	-0.604753691	0.418672472	14704
+tBodyAccJerk.mean...X	0.079125881	0.180913993	14704
+tBodyAccJerk.mean...Y	0.008555454	0.163701213	14704
+tBodyAccJerk.mean...Z	-0.004693134	0.159904193	14704
+tBodyAccJerk.std...X	-0.643554061	0.411838245	14704
+tBodyAccJerk.std...Y	-0.610655494	0.433649507	14704
+tBodyAccJerk.std...Z	-0.760471339	0.287371908	14704
+tBodyAccJerkMag.mean..	-0.650452507	0.395622387	14704
+tBodyAccJerkMag.std..	-0.632675632	0.418819001	14704
+tBodyAccMag.mean..	-0.543884115	0.477636867	14704
+tBodyAccMag.std..	-0.588883817	0.437456718	14704
+tBodyGyro.mean...X	-0.027183811	0.182150226	14704
+tBodyGyro.mean...Y	-0.076163968	0.132373012	14704
+tBodyGyro.mean...Z	0.086587993	0.139300577	14704
+tBodyGyro.std...X	-0.720887955	0.306713076	14704
+tBodyGyro.std...Y	-0.675879523	0.371324663	14704
+tBodyGyro.std...Z	-0.654518806	0.377269699	14704
+tBodyGyroJerk.mean...X	-0.097884801	0.127512267	14704
+tBodyGyroJerk.mean...Y	-0.042450044	0.117023071	14704
+tBodyGyroJerk.mean...Z	-0.054324912	0.130194458	14704
+tBodyGyroJerk.std...X	-0.730042535	0.31163332	14704
+tBodyGyroJerk.std...Y	-0.783932789	0.28251674	14704
+tBodyGyroJerk.std...Z	-0.742128208	0.304350481	14704
+tBodyGyroJerkMag.mean..	-0.760318771	0.285018532	14704
+tBodyGyroJerkMag.std..	-0.777814564	0.279120897	14704
+tBodyGyroMag.mean..	-0.602902674	0.407748982	14704
+tBodyGyroMag.std..	-0.655773077	0.362442186	14704
+tGravityAcc.mean...X	0.664121889	0.516745562	14704
+tGravityAcc.mean...Y	0.01100604	0.37222455	14704
+tGravityAcc.mean...Z	0.093920274	0.347780653	14704
+tGravityAcc.std...X	-0.964522578	0.077996654	14704
+tGravityAcc.std...Y	-0.953683719	0.09146203	14704
+tGravityAcc.std...Z	-0.93692889	0.107197073	14704
+tGravityAccMag.mean..	-0.543884115	0.477636867	14704
+tGravityAccMag.std..	-0.588883817	0.437456718	14704
+
+
+3. Activity labels being measured:
+a Walking: walking 
+b Walking_Up: walking up the stairs
+c Walking_Down: walking down the stairs
+d Sitting: sitting 
+e Standing: standing
+f Laying: laying down 
